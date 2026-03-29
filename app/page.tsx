@@ -7,6 +7,8 @@ import ComparisonTable from '@/components/sections/ComparisonTable';
 import TrustSection from '@/components/sections/TrustSection';
 import LeadFormSection from '@/components/sections/LeadFormSection';
 import CtaBanner from '@/components/sections/CtaBanner';
+import SeoTextSection from '@/components/sections/SeoTextSection';
+import FaqSection from '@/components/sections/FaqSection';
 
 export default function HomePage() {
   return (
@@ -19,6 +21,8 @@ export default function HomePage() {
         <CtaBanner />
         <ComparisonTable />
         <TrustSection />
+        <SeoTextSection />
+        <FaqSection />
         <LeadFormSection />
       </main>
       <Footer />
