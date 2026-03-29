@@ -1,45 +1,44 @@
 import { Check, Minus } from 'lucide-react';
-import { formatCurrency } from '@/lib/franchises';
 
 const brands = [
   {
-    name: 'IronCore Fitness',
+    name: 'Anytime Fitness',
     category: 'Gym',
-    investment: '$250k–$450k',
+    investment: '$350k–$975k',
     recurring: true,
     training: true,
     national: true,
     siteSelection: true,
-    lowStaff: false,
-  },
-  {
-    name: 'Studio Reform',
-    category: 'Pilates',
-    investment: '$150k–$280k',
-    recurring: true,
-    training: true,
-    national: true,
-    siteSelection: false,
     lowStaff: true,
   },
   {
-    name: 'Apex Performance',
+    name: 'F45 Training',
     category: 'Functional',
-    investment: '$180k–$320k',
+    investment: '$50k–$150k',
     recurring: true,
     training: true,
-    national: false,
+    national: true,
     siteSelection: true,
     lowStaff: false,
   },
   {
-    name: 'Revive Recovery',
-    category: 'Recovery',
-    investment: '$200k–$380k',
+    name: 'BFT',
+    category: 'Functional',
+    investment: '$300k–$600k',
+    recurring: true,
+    training: true,
+    national: true,
+    siteSelection: true,
+    lowStaff: false,
+  },
+  {
+    name: 'STRONG Pilates',
+    category: 'Pilates',
+    investment: '$350k–$600k',
     recurring: true,
     training: true,
     national: false,
-    siteSelection: false,
+    siteSelection: true,
     lowStaff: true,
   },
 ];
@@ -57,10 +56,10 @@ export default function ComparisonTable() {
     <section id="compare" className="py-20 md:py-28 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <p className="text-brand-600 font-semibold text-sm uppercase tracking-widest mb-3">Side by Side</p>
-          <h2 className="section-heading mb-4">Compare Top Brands</h2>
+          <p className="text-[#1e3a8a] font-semibold text-sm uppercase tracking-widest mb-3">Side by Side</p>
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-slate-900 leading-tight mb-4">Compare Top Brands</h2>
           <p className="text-slate-600 text-lg max-w-xl mx-auto">
-            A quick snapshot comparison of our featured franchise brands.
+            A quick snapshot of Australia's most popular fitness franchise brands.
           </p>
         </div>
 
@@ -79,7 +78,7 @@ export default function ComparisonTable() {
               <tr className="border-b border-slate-100 bg-slate-50">
                 <td className="px-6 py-4 text-sm font-semibold text-slate-700">Investment Range</td>
                 {brands.map((b) => (
-                  <td key={b.name} className="text-center px-4 py-4 text-sm font-semibold text-brand-700">
+                  <td key={b.name} className="text-center px-4 py-4 text-sm font-semibold text-[#1e3a8a]">
                     {b.investment}
                   </td>
                 ))}
@@ -92,7 +91,7 @@ export default function ComparisonTable() {
                   {brands.map((b) => (
                     <td key={b.name} className="text-center px-4 py-4">
                       {(b as any)[f.key] ? (
-                        <Check size={18} className="text-brand-600 mx-auto" />
+                        <Check size={18} className="text-[#1e3a8a] mx-auto" />
                       ) : (
                         <Minus size={18} className="text-slate-300 mx-auto" />
                       )}
@@ -103,7 +102,6 @@ export default function ComparisonTable() {
             </tbody>
           </table>
         </div>
-
         <p className="text-center text-slate-500 text-sm mt-6">
           * Data is indicative. Full details provided after completing your free enquiry.
         </p>
