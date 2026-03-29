@@ -49,7 +49,7 @@ export default function FranchisePage({ params }: { params: { slug: string } }) 
                   <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${categoryColors[franchise.category]}`}>
                     {franchise.category}
                   </span>
-                  {franchise.featured && (
+                  {false && (
                     <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-yellow-500/10 text-yellow-400 border border-yellow-500/20">
                       Featured
                     </span>
