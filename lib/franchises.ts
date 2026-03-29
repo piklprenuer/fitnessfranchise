@@ -124,8 +124,8 @@ export const franchises: Franchise[] = [
     founded: "2013",
     globalLocations: 1700,
     totalInvestmentRange: {
-      min: 50000,
-      max: 150000,
+      min: 350000,
+      max: 600000,
       currency: "AUD",
     },
     fees: {
