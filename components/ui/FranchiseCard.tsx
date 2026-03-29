@@ -123,3 +123,4 @@ export default function FranchiseCard({ franchise }: { franchise: Franchise }) {
     </div>
   );
 }
+// updated
